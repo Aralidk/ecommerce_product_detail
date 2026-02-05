@@ -1,16 +1,17 @@
-# ecommerce_product_detail
-
 E-Commerce Product Detail Page
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Özellikler
+Shopify Storefront GraphQL API üzerinden ürün detaylarını çekme
+Ürün görselleri için:
+Yatay kaydırılabilir PageView
+Dot indicator
+Görsel sayısı göstergesi (1 / N)
+Sol / sağ kaydırma yönünü belirten ikonlar
+Ürün varyant ve opsiyon seçimi
+Seçilen varyanta göre dinamik fiyat güncelleme
+Sepete ekleme akışı:
+Optimistic UI
+Loading durumu
+Hata yönetimi
+Global cart state ve AppBar’da canlı sepet badge
+Merkezi SnackBar geri bildirim sistemi
