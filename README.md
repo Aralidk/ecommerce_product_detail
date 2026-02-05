@@ -83,8 +83,7 @@ Flutter SDK (master channel)
 Xcode
 iOS Simulator
 Adımlar
-git clone <repository-url>
-cd ecommerce_product_detail
+gh repo clone Aralidk/ecommerce_product_detail
 flutter pub get
 flutter run
 
