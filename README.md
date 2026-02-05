@@ -1,45 +1,59 @@
 # ecommerce_product_detail
-E-Commerce Product Detail Page
 
-✨Özellikler
-Shopify Storefront GraphQL API üzerinden ürün detaylarını çekme
-Ürün görselleri için:
-Yatay kaydırılabilir PageView
-Dot indicator
-Görsel sayısı göstergesi (1 / N)
-Sol / sağ kaydırma yönünü belirten ikonlar
-Ürün varyant ve opsiyon seçimi
-Seçilen varyanta göre dinamik fiyat güncelleme
-Sepete ekleme akışı:
-Optimistic UI
-Loading durumu
-Hata yönetimi
-Global cart state ve AppBar’da canlı sepet badge
-Merkezi SnackBar geri bildirim sistemi
+## E-Commerce Product Detail Page
+
+Bu proje, Shopify Storefront GraphQL API kullanılarak geliştirilmiş bir **Ürün Detay Sayfası** case study uygulamasıdır.  
+Flutter ve Riverpod kullanılarak ölçeklenebilir, okunabilir ve modern bir mimari hedeflenmiştir.
+
+---
+
+```text
+
+## ✨ Özellikler
+
+- Shopify Storefront GraphQL API üzerinden ürün detaylarını çekme
+- Ürün görselleri için:
+  - Yatay kaydırılabilir PageView
+  - Dot indicator
+  - Görsel sayısı göstergesi (1 / N)
+  - Sol / sağ kaydırma yönünü belirten ikonlar
+- Ürün varyant ve opsiyon seçimi
+- Seçilen varyanta göre dinamik fiyat güncelleme
+- Sepete ekleme akışı:
+  - Optimistic UI
+  - Loading durumu
+  - Hata yönetimi
+- Global cart state ve AppBar’da canlı sepet badge
+- Merkezi SnackBar geri bildirim sistemi
+
+---
+
+## 📁 Proje Yapısı
+
 
 lib/
-├─ app/                  → Uygulama başlangıcı
+├─ app/
+│  └─ app.dart                 # Uygulama başlangıcı
 ├─ core/
-│  ├─ const/              → Sabitler
-│  ├─ network/            → Shopify client (Dio)
-│  └─ service/            → UI servisleri (SnackBar)
-│
+│  ├─ const/                   # Sabitler
+│  ├─ network/                 # Shopify client (Dio)
+│  └─ service/                 # UI servisleri (SnackBar)
 ├─ features/
 │  ├─ product_detail/
 │  │  ├─ data/
 │  │  │  ├─ product_repository.dart
-│  │  │  ├─ product_query.dart
-│  │  │  └─ model/
+│  │  │  └─ product_query.dart
+│  │  ├─ model/
 │  │  ├─ widgets/
 │  │  ├─ product_detail_controller.dart
 │  │  ├─ product_detail_state.dart
 │  │  └─ product_detail_page.dart
-│  │
 │  └─ cart/
 │     ├─ cart_controller.dart
 │     └─ cart_state.dart
-│
 └─ main.dart
+
+
 
 Mimari Kararlar
 Riverpod (StateNotifier) ile ölçeklenebilir state yönetimi
