@@ -49,6 +49,8 @@ lib/
 │  │  ├─ product_detail_state.dart
 │  │  └─ product_detail_page.dart
 │  └─ cart/
+│     ├─ data/
+│     │ └─ cart_query.dart
 │     ├─ cart_controller.dart
 │     └─ cart_state.dart
 └─ main.dart
